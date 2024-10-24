@@ -9,16 +9,23 @@ body {
 }
 
 .matriz {
+  margin-top: 40PX;
+  height: 70%;
   display: flex;
   justify-content: center;
 }
 
 .rotacao {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
   margin-top: 20px;
   text-align: center;
+}
+
+.rotacao label{
+  text-align: left;
+  font-weight: bold;
 }
 
 #drawPolygon{
@@ -30,6 +37,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
+  grid-column: 1/-1;
 }
 
 #drawPolygon:hover{
